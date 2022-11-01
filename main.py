@@ -4,7 +4,7 @@ from paddle import Paddle
 
 # set up screen for pong game
 screen = Screen()
-screen.setup(width=800, height=600)
+screen.setup(800, 600)
 screen.bgcolor('black')
 screen.title('Welcome to pong game')
 screen.tracer(0)

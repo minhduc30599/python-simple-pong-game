@@ -8,15 +8,15 @@ class Paddle(Turtle):
         self.create_paddle()
 
     def create_paddle(self):
-        self.color('white')
-        self.paddle.shapesize(stretch_len=5, stretch_wid=1)
+        self.paddle.color('white')
+        self.paddle.shapesize(stretch_wid=5, stretch_len=1)
         self.paddle.penup()
         self.paddle.goto(350, 0)
 
     def go_up(self):
-        new_x = self.paddle.ycor() + 20
-        self.paddle.goto(350, new_x)
+        new_y = self.paddle.ycor() + 20
+        self.paddle.goto(350, new_y)
 
     def go_down(self):
-        new_x = self.paddle.ycor() - 20
-        self.paddle.goto(350, new_x)
+        new_y = self.paddle.ycor() - 20
+        self.paddle.goto(350, new_y)
